@@ -28,14 +28,13 @@ export default function Home() {
           <li>Save and see your changes instantly.</li>
         </ol>
 
-        
-        <Button
-          label="Click Me"
-          onClick={() => alert("Button Clicked!")}
-          className="text-sm mt-8" // Optional styling for spacing
-        />
-
         <div className="flex gap-4 items-center flex-col sm:flex-row">
+          <Button
+            label="Click Me"
+            onClick={() => alert("Button Clicked!")}
+            className="text-sm sm:text-base" // Optional styling for spacing
+          />
+          
           <LinkButton
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
             label="Deploy now"
@@ -43,22 +42,20 @@ export default function Home() {
             imageAlt="Vercel logomark"
             className="text-sm sm:text-base"
           />
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+          <LinkButton
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-
-          <TextLink
-            href="/login"
-            label="Already have an account? Login"
-            className="mt-4"
+            label="Read our docs"
+            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
           />
         </div>
-
+        <div className="flex gap-4 items-center flex-col">
+          <TextLink
+              href="/login"
+              label="Already have an account? Login"
+              className="mt-4"
+          />
+        </div>
+        
       </main>
 
 

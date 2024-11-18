@@ -11,6 +11,8 @@ interface LinkButtonProps {
   imageWidth?: number;
   imageHeight?: number;
   className?: string;
+//   target?: string;
+//   rel?: string;
 }
 
 const LinkButton: React.FC<LinkButtonProps> = ({
