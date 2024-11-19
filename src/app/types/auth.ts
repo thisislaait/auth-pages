@@ -5,6 +5,7 @@ export interface SignUpData {
     email: string;
     password: string;
     confirmPassword: string;
+    userType: '' | 'work' | 'business';
   }
   
   export interface LoginData {
